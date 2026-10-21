@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KafeGen Z - Menu Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KafeGen Z ☕</h1>
+        <p>Pilih, pesan, dan nikmati langsung dari gawaimu!</p>
+    </header>
+
+    <main>
+        <section class="search-filter">
+            <input type="text" id="searchInput" placeholder="Cari menu favoritmu...">
+            <div class="categories">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="coffee">Kopi</button>
+                <button class="filter-btn" data-category="snack">Camilan</button>
+            </div>
+        </section>
+
+        <section id="menuContainer" class="menu-grid">
+            <!-- Menu akan dimuat secara dinamis melalui JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="cart-bar">
+            <span>Total Pesanan: <strong id="cartTotal">Rp 0</strong></span>
+            <button id="orderBtn">Pesan Sekarang</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
